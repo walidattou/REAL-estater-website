@@ -1,0 +1,16 @@
+/* Add this in your global CSS file (e.g., index.css or App.css) */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+#root {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+}

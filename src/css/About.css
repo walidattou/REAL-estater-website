@@ -1,0 +1,493 @@
+/* About Page Styles */
+
+/* General Styles */
+.about-page {
+  width: 100%;
+  background-color: #f9fafb;
+  color: #475569;
+}
+
+.about-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Hero Section */
+.about-hero {
+  height: 50vh;
+  min-height: 400px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/placeholder.svg?height=1080&width=1920");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content {
+  max-width: 800px;
+  padding: 0 2rem;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Our Story Section */
+.story-section {
+  padding: 6rem 0;
+}
+
+.story-content {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+
+.story-text {
+  flex: 1;
+}
+
+.story-text h2 {
+  color: #1e293b;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.story-text h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 3px;
+  background-color: #facc15;
+}
+
+.story-text p {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.story-image {
+  flex: 1;
+}
+
+.story-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Statistics Section */
+.stats-section {
+  padding: 4rem 0;
+  background-color: #1e293b;
+  color: white;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  text-align: center;
+}
+
+.stat-card {
+  padding: 2rem;
+}
+
+.stat-value {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #facc15;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Mission & Values Section */
+.mission-section {
+  padding: 6rem 0;
+  background-color: white;
+}
+
+.mission-content {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+
+.mission-image {
+  flex: 1;
+}
+
+.mission-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.mission-text {
+  flex: 1;
+}
+
+.mission-text h2 {
+  color: #1e293b;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.mission-text h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 3px;
+  background-color: #facc15;
+}
+
+.mission-text p {
+  margin-bottom: 2rem;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.mission-text h3 {
+  color: #1e293b;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.values-list {
+  list-style: none;
+  padding: 0;
+}
+
+.values-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.values-list .icon {
+  color: #facc15;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+}
+
+/* Team Section */
+.team-section {
+  padding: 6rem 0;
+  background-color: #f9fafb;
+}
+
+.team-section h2 {
+  color: #1e293b;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.team-section h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #facc15;
+}
+
+.section-intro {
+  text-align: center;
+  color: #64748b;
+  margin-bottom: 4rem;
+  font-size: 1.2rem;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2.5rem;
+}
+
+.team-card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.team-image {
+  height: 300px;
+  overflow: hidden;
+}
+
+.team-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.team-card:hover .team-image img {
+  transform: scale(1.05);
+}
+
+.team-info {
+  padding: 1.5rem;
+}
+
+.team-info h3 {
+  color: #1e293b;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.team-role {
+  color: #facc15;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.team-bio {
+  color: #64748b;
+  line-height: 1.6;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  padding: 6rem 0;
+  background-color: white;
+}
+
+.testimonials-section h2 {
+  color: #1e293b;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.testimonials-section h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #facc15;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2.5rem;
+}
+
+.testimonial-card {
+  background-color: #f9fafb;
+  border-radius: 8px;
+  padding: 2.5rem;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.quote-icon {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  font-size: 3rem;
+  color: rgba(250, 204, 21, 0.2);
+}
+
+.testimonial-quote {
+  margin-bottom: 2rem;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #1e293b;
+}
+
+.testimonial-author {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 1.5rem;
+}
+
+.author-name {
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 0.3rem;
+}
+
+.author-location {
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+/* Call to Action Section */
+.cta-section {
+  padding: 6rem 0;
+  background-image: linear-gradient(rgba(30, 41, 59, 0.9), rgba(30, 41, 59, 0.9)),
+    url("/placeholder.svg?height=800&width=1600");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+}
+
+.cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.cta-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #facc15;
+  color: #1e293b;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #eab308;
+  transform: translateY(-3px);
+}
+
+.cta-button.secondary {
+  background-color: transparent;
+  border: 2px solid #facc15;
+  color: #facc15;
+}
+
+.cta-button.secondary:hover {
+  background-color: rgba(250, 204, 21, 0.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .story-content,
+  .mission-content {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .mission-content {
+    flex-direction: column-reverse;
+  }
+
+  .story-text,
+  .story-image,
+  .mission-text,
+  .mission-image {
+    flex: none;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.8rem;
+  }
+
+  .story-text h2,
+  .mission-text h2,
+  .team-section h2,
+  .testimonials-section h2,
+  .cta-content h2 {
+    font-size: 2rem;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
